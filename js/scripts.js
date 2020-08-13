@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("form#survey").submit(function(event) {
-    const moneyVal = $("input:radio[name=money]:checked").val();
-    const libertyVal = $("input:radio[name=liberty]:checked").val();
+    const moneyVal = parseInt($("input:radio[name=money]:checked").val());
+    const libertyVal = parseInt($("input:radio[name=liberty]:checked").val());
     const total = moneyVal + libertyVal;
     
     let orientation;
